@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+
+	<RelativeLayout android:id="@+id/RelativeLayout01"
+		android:layout_width="fill_parent" android:layout_height="60dip">
+		<ImageView android:layout_centerInParent="true" android:id="@+id/color_imageview"
+			android:layout_width="200dip" android:layout_height="40dip" android:background="@color/solid_yellow">
+		</ImageView>
+	</RelativeLayout>
+	<RelativeLayout android:id="@+id/RelativeLayout02" 
+		android:layout_width="fill_parent" android:layout_height="150dip">
+		<ImageButton android:id="@+id/yellow" android:layout_marginLeft="38dip"
+			android:layout_width="40dip" android:layout_height="150dip"
+			android:background="@color/solid_yellow"></ImageButton>
+		<ImageButton android:layout_toRightOf="@+id/yellow"
+			android:id="@+id/green" android:layout_width="40dip"
+			android:layout_height="150dip" android:background="@color/solid_green">
+		</ImageButton>
+		<ImageButton android:layout_toRightOf="@+id/green"
+			android:id="@+id/white" android:layout_width="40dip"
+			android:layout_height="150dip" android:background="@color/white_gray"></ImageButton>
+		<ImageButton android:layout_toRightOf="@+id/white"
+			android:id="@+id/black" android:layout_width="40dip"
+			android:layout_height="150dip" android:background="@color/black"></ImageButton>
+		<ImageButton android:layout_toRightOf="@+id/black"
+			android:id="@+id/blue" android:layout_width="40dip"
+			android:layout_height="150dip" android:background="@color/blue"></ImageButton>
+	</RelativeLayout>
+
+</LinearLayout>

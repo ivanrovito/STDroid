@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	android:orientation="vertical" android:background="@android:color/darker_gray">
+	<LinearLayout android:id="@+id/twitter_linearlayout"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:background="@android:drawable/bottom_bar">
+		<CheckBox android:text="twitter" 
+			android:layout_width="wrap_content"
+			android:id="@+id/twitter_checkbox" 
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="20px">
+		</CheckBox>
+	</LinearLayout>
+	<Spinner android:id="@+id/Spinner01_twitter_multi"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/twitter_linearlayout" android:layout_marginLeft="20dip" android:layout_width="200dip">
+		</Spinner>
+
+
+	<LinearLayout android:id="@+id/follow5_linearlayout"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_below="@id/Spinner01_twitter_multi"
+		android:background="@android:drawable/bottom_bar">
+		<CheckBox android:text="follow5" android:layout_y="156dip"
+			android:layout_width="wrap_content" android:layout_x="5dip"
+			android:id="@+id/follow5_checkbox" android:layout_height="wrap_content"
+			android:layout_marginLeft="20px">
+		</CheckBox>
+
+	</LinearLayout>
+	<Spinner android:id="@+id/Spinner01_follow5_multi"
+		android:layout_below="@id/follow5_linearlayout" android:layout_height="wrap_content" android:layout_width="200dip" android:layout_marginLeft="20dip"></Spinner>
+
+	<LinearLayout android:id="@+id/crowdroid_business_layout"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_below="@id/Spinner01_follow5_multi"
+		android:background="@android:drawable/bottom_bar">
+		<CheckBox android:text="crowdroidbusiness" android:layout_y="156dip"
+			android:layout_width="wrap_content" android:layout_x="5dip"
+			android:id="@+id/crowdroidbusiness_checkbox" android:layout_height="wrap_content"
+			android:layout_marginLeft="20px">
+		</CheckBox>
+
+	</LinearLayout>
+	<Spinner android:id="@+id/Spinner01_crowdroidbusiness_multi"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/crowdroid_business_layout" android:layout_marginLeft="20dip" android:layout_width="200dip"></Spinner>
+
+
+	<LinearLayout android:id="@+id/linearlayout_bottom"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true">
+		
+		
+	<RelativeLayout 
+	android:id="@+id/RelativeLayout01" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content">
+	
+	<Button android:text="@string/activity_setting_confirm" 
+	android:id="@+id/Button_confirm" 
+	android:layout_height="wrap_content" 
+	 android:layout_alignParentLeft="true" android:layout_width="100dip">
+		</Button>
+		
+		<Button android:text="@string/activity_setting_cancel" 
+		android:id="@+id/Button_cancel" 
+		android:layout_height="wrap_content"
+		  android:layout_alignParentRight="true" android:layout_width="100dip">
+		</Button>
+		</RelativeLayout>
+</LinearLayout>
+</RelativeLayout>

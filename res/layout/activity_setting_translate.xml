@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@android:color/darker_gray">
+
+
+	
+
+	
+
+	<LinearLayout android:id="@+id/LinearLayout01"
+		android:layout_width="fill_parent" android:background="@android:drawable/bottom_bar" android:gravity="center_vertical" android:layout_height="50sp">
+
+		<ImageView android:id="@+id/ImageView03"
+			android:src="@drawable/actvity_setting_translate_engine"
+			android:scaleType="fitXY" android:layout_height="48sp" android:layout_width="48px"></ImageView>
+
+		<TextView android:id="@+id/TextView01" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textSize="16sp"
+			android:textColor="@android:color/white" android:text="@string/translate_engine_selected">
+		</TextView>
+
+
+	</LinearLayout>
+
+	<LinearLayout android:id="@+id/LinearLayout03"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:background="@android:color/darker_gray" android:orientation="vertical">
+
+		<LinearLayout android:id="@+id/LinearLayout06"
+			android:layout_width="fill_parent" android:gravity="center_vertical" android:layout_height="50sp">
+			<ImageView android:id="@+id/ImageView01"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:src="@drawable/actvity_setting_translate_google"
+				android:layout_weight="1"></ImageView>
+
+
+
+
+
+
+			<RadioButton android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/google"
+				android:text="Google" android:layout_weight="1">
+			</RadioButton>
+		</LinearLayout>
+		<LinearLayout android:id="@+id/LinearLayout04"
+			android:layout_width="fill_parent" 
+			android:background="@android:drawable/bottom_bar" 
+			android:layout_height="5sp">
+		</LinearLayout>
+		<LinearLayout android:id="@+id/LinearLayout05"
+			android:layout_width="fill_parent" android:gravity="center_vertical" android:layout_height="50sp">
+			<ImageView android:id="@+id/ImageView02"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:src="@drawable/actvity_setting_translate_bing"
+				android:layout_weight="1">
+			</ImageView>
+
+
+
+			<ImageView android:id="@+id/ImageView05"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></ImageView>
+			<RadioButton android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="Bing    "
+				android:layout_weight="1" android:id="@+id/bing"></RadioButton>
+		</LinearLayout><LinearLayout android:id="@+id/LinearLayout001" android:layout_width="fill_parent" android:background="@android:drawable/bottom_bar" android:gravity="center_vertical" android:layout_height="50sp">
+
+
+		<ImageView android:id="@+id/ImageView03" android:background="@android:drawable/stat_notify_chat" android:scaleType="fitXY" android:layout_height="48sp" android:layout_width="48px"></ImageView>
+
+		<TextView android:id="@+id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="16sp" android:textColor="@android:color/white" android:layout_weight="1" android:text="@string/activity_mainsetting_makeautotranslate">
+		</TextView>
+
+		<CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/CheckBox01_auto_translate" android:text="enable" android:layout_weight="1">
+		</CheckBox>
+	</LinearLayout>
+
+
+	</LinearLayout>
+
+
+
+
+	<LinearLayout android:id="@+id/LinearLayout07"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+
+
+	</LinearLayout>
+	
+	<LinearLayout android:id="@+id/LinearLayout09"
+			android:layout_width="fill_parent" 
+			android:background="@android:drawable/bottom_bar" 
+			android:layout_height="5sp">
+	</LinearLayout>
+		
+	<LinearLayout android:id="@+id/LinearLayout08"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:background="@android:drawable/bottom_bar"
+		android:gravity="center_vertical">
+
+			<TextView android:id="@+id/TextView02" 
+				android:layout_height="fill_parent" 
+				android:layout_width="110dip" 
+				android:textColor="@android:color/white" 
+				android:text="@string/activity_translatesetting_userid"
+				android:layout_marginLeft = "10px" android:textSize="16sp"
+				android:gravity="center_vertical"/>
+
+			<TextView android:id="@+id/TextView03" 
+				android:layout_height="fill_parent" 
+				android:layout_width="70dip"
+				android:textColor="@android:color/white" 
+				android:text="@string/activity_translatesetting_translatefrom" 
+				android:textSize="16sp"
+				android:gravity="center_vertical"/>
+				
+			<TextView android:id="@+id/TextView04" 
+				android:layout_height="fill_parent" 
+				android:layout_width="70dip"
+				android:textColor="@android:color/white" 
+				android:text="@string/activity_translatesetting_translateto" 
+				android:textSize="16sp"
+				android:gravity="center_vertical"/>
+
+			<Button android:background="@drawable/actvity_setting_translate_add"
+				android:id="@+id/add" android:layout_height="48sp" 
+				android:layout_width="48sp"
+				>
+			</Button>
+
+
+	</LinearLayout>
+	<ListView android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:id="@+id/list_translation"></ListView>
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<WebView 
+		android:id="@+id/web_view" 
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" />
+
+	<TextView 
+		android:layout_height="wrap_content" 
+		android:id="@+id/TextView01"
+		android:textColor="#87ceeb" 
+		android:text="@string/activity_register_twitter_clickandputpincode"
+		android:layout_width="fill_parent" 
+		android:layout_below="@+id/pin_text"
+		android:paddingLeft="10dip"></TextView>
+
+	<EditText 
+		android:layout_height="wrap_content" 
+		android:id="@+id/pin_text"
+		android:hint="@string/activity_register_twitter_putpincodehere" 
+		android:layout_width="fill_parent"
+		android:layout_marginLeft="10dip" 
+		android:layout_marginRight="10dip"></EditText>
+
+
+	<LinearLayout
+		android:id="@+id/LinearLayout01" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:orientation="vertical" 
+		android:layout_alignParentBottom="true"
+		android:background="#000000">
+			
+		<CheckBox 
+			android:layout_width="wrap_content" 
+			android:id="@+id/allow_box"
+			android:layout_height="wrap_content"
+			android:text="@string/activity_register_twitter_allowuse"
+			android:textSize="11dip" 
+			android:layout_marginLeft="5dip" />
+
+
+		<LinearLayout
+			android:id="@+id/LinearLayout02" 
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+			
+			<RelativeLayout
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:paddingLeft="5dip" 
+				android:paddingRight="5dip">
+				
+				<Button 
+					android:layout_width="120dip" 
+					android:id="@+id/back_button"
+					android:layout_height="wrap_content" 
+					android:text="@string/activity_register_twitter_back"
+					android:layout_alignParentLeft="true" />
+					
+				<Button 
+					android:layout_width="120dip" 
+					android:id="@+id/finish_button"
+					android:layout_height="wrap_content" 
+					android:text="@string/activity_register_twitter_finish"
+					android:layout_alignParentRight="true" />
+					
+			</RelativeLayout>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</RelativeLayout>
+	
+	

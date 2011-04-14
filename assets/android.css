@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+/* Delta Cascading Style.		*/
+/* Author	: Masakazu Yanai	*/
+/* Redid	: 2009/02/17		*/
+
+@media screen, print{
+
+*{
+	margin: 0px;
+	padding: 0px;
+	line-height: 140%;
+}
+
+/* ============================================ */
+/* Body */
+body {
+	line-height: 130%;
+	color: #444;
+	text-align: center;
+}
+
+/* Backgrounds */
+body {
+	background: #DFEFFF;
+}
+
+/* debag
+body * {
+	border: 1px solid red;
+}
+*/
+
+.container {
+	padding-bottom: 8px;
+}
+
+/* ============================================ */
+/* head */
+h1 { margin-bottom: 8px; }
+h2 { margin-bottom: 8px; }
+h3 { margin-bottom: 8px; }
+h4 { margin-bottom: 8px; }
+h5 { margin-bottom: 8px; }
+h6 { margin-bottom: 8px; }
+
+/* ============================================ */
+/* text */
+.sub_txt {
+	font-weight: bold;
+	color: #bbb;
+}
+
+.lst_txt {
+}
+
+.box_end {
+	text-align: right;
+	clear: all;
+}
+
+p {
+	text-indent: 0.75em;
+	line-height: 160%;
+}
+
+div {
+	line-height: 160%;
+}
+
+.img_box {
+	margin-top: 8px;
+}
+
+/* ============================================ */
+/* list */
+ul, ol {
+	padding-left: 1em;
+}
+ul.record, ol.record {
+	padding-left: 1.1em;
+}
+
+/* ============================================ */
+/* Ad Out */
+
+.ad_out {
+	margin-top: 8px;
+}
+
+/* ============================================ */
+/* Round Box */
+
+.rout {
+	width: 95%;
+	margin: 0 auto;
+	position: relative;
+	margin-top: 8px;
+	background-color: #FFFFFF;
+}
+.rin {
+	margin: 0;
+	padding: 8px 24px;
+	background-color: #FFFFFF;
+	text-align: left;
+}
+.rtop, .rbottom{
+	background:#DFEFFF;
+}
+.rtop span, .rbottom span{
+	display: block;
+	height: 1px;
+	overflow: hidden;
+	background-color: #FFFFFF;
+}
+.r1{ margin: 0px 5px; }
+.r2{ margin: 0px 3px; }
+.r3{ margin: 0px 2px; }
+.r4{ margin: 0px 1px; height: 2px; }
+
+/* ============================================ */
+/* Special */
+
+.smpl_link{
+	color: blue;
+	text-decoration: underline;
+}
+
+.help_link{
+	border: 2px solid #9FCFFF;
+	background-color: #DFEFFF;
+	color: blue;
+	text-decoration: underline;
+	font-weight: bold;
+	padding: 0, 0.25em;
+}
+
+.help_body {
+	display: none;
+	border: 2px solid #9FCFFF;
+	background-color: #DFEFFF;
+	padding: 0.5em;
+	margin: 0.5em;
+}
+
+.get_srch_stg_add {
+	font-weight: bold;
+}
+
+.c_name {
+	background-color: #FFCFCF;
+	padding: 0.05em 0.3em;
+	border: 1px solid #FF9F9F;
+}
+
+.del_str {
+	background-color: #EFEFEF;
+	padding: 0 0.3em;
+	border: 1px solid #AFAFAF;
+	color: 8F8F8F;
+}
+
+}

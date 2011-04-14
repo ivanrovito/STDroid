@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+	<LinearLayout 
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_height="fill_parent" 
+		android:layout_width="fill_parent"
+		android:orientation="vertical">
+	
+	<!-- Input Area -->
+	<!-- 
+	<LinearLayout android:id="@+id/LinearLayout02"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:background="#FFFFFF"
+		android:orientation="horizontal">
+		<EditText android:id="@+id/search_edit_view" 
+			android:layout_height="wrap_content"
+			android:layout_width="200dip"
+			android:layout_marginLeft="20dip" 
+			/>
+		<ImageButton android:id="@+id/search_button"
+			android:src="@drawable/mainsetting_ic_menu_search"
+			android:scaleType="fitXY"
+			android:layout_height="48dip" 
+			android:layout_width="48dip"
+			android:layout_marginLeft="10dip" 
+			android:layout_marginRight="20dip"/>
+			 
+     </LinearLayout>
+     -->
+     
+     
+     <!-- Button -->
+     <LinearLayout 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="#FFFFFF"
+		android:orientation="horizontal">
+			<Button android:id="@+id/prev_button"
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:layout_weight="1"
+				android:text="@string/prev"/>
+			<Button android:id="@+id/next_button"
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:layout_weight="1"
+				android:text="@string/next" />
+			<Button android:id="@+id/close_button"
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:layout_weight="1"
+				android:text="@string/close" />
+	
+	</LinearLayout>
+
+     <!-- List -->
+	<ListView android:id="@+id/user_select_listview"
+			android:layout_width="fill_parent" 
+			android:layout_height="fill_parent"/>
+
+
+	</LinearLayout>
+
+

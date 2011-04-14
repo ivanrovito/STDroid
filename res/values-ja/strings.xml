@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">StatusDroid</string>
+    <!-- <string name="inputserver">サーバーのアドレスを入力してください。</string> -->
+    <string name="activity_login_softwareName">ソフト名: StatusDroid \nバージョン:</string>
+    <string name="activity_login_MiniSDK">\nサポートSDK:</string>
+    <string name="activity_login_developer">\n開発元: StatusDroid\n連絡先: kimura@smg.co.jp</string>
+    <string name="activity_lgoin_layout_crowdroid_business_about"><u>StatusDroidとは?</u></string>
+    <string name="menu_timeline_settings">設定</string>
+    <string name="dialog_searchservice_pleasechoose">選択してください :</string>
+    <string name="toast_verify_failed">ユーザーの認証に失敗しました</string>
+    <string name="activity_timeline_tab_home">パブリックタイムライン</string>
+    <string name="activity_timeline_tab_at_message">\@メッセージ</string>
+    <string name="activity_timeline_tab_directmessage">ダイレクト メッセージ</string>
+    <string name="activity_timeline_tab_MyTimeline">マイ タイムライン</string>
+    <string name="activity_timeline_currentpage">         現在のページ: </string>
+    <string name="dialog_activity_timeline_receive">受信</string>
+    <string name="dialog_activity_timeline_send">送信</string>
+    <string name="dialog_activity_message_sent_failed">メッセージの送信に失敗しました</string>
+    <string name="dialog_activity_message_sent_notifyusers">StatusDroidにログインしていません。</string>
+    <string name="dialog_activity_message_sent_shortenurl">URLの短縮</string>
+    <string name="menu_activity_timeline_wallpaper">壁紙に使用する画像を選択してください。</string>
+    <string name="dialog_long_tweet_twitlonger">長文の編集</string>
+    <string name="dialog_searchuser_searchuser">ユーザー検索</string>
+    <string name="dialog_searchinfo_searchsometing">キーワード検索</string>
+    <string name="dialog_multiselect_succeed">操作成功 </string>
+    <string name="dialog_file_explorer_selectpicture">画像の選択</string>
+    <string name="dialog_file_explorer_nosdcard">SDカードを認識できません。</string>
+    <string name="dialog_file_explorer_retweet">リツイート</string>
+    <string name="message">のメッセージ</string>
+    <string name="activity_setting_confirm">確認</string>
+    <string name="activity_setting_cancel">キャンセル</string>
+    <string name="dialog_multiselect_deletethemessage">このメッセージを削除する</string>
+    <string name="ok">OK</string>
+    <string name="dialog_multiselect_faidled">失敗</string>
+     <string name="dialog_searchinfo_searchkeyworld">キーワード検索</string>
+    <string name="dialog_profile_myfavoritestatus">お気に入り</string>
+    <string name="Logout">ログアウト</string>
+    <string name="dialog_profile_status">のステータス</string>
+    <string name="dialog_profile_follower">Follower[ %1$s ]\nFollowing[ %2$s ]</string>
+    <string name="dialog_profile_waitting">                 </string> 
+    <string name="tost_dialog_profile_communicationfailed">通信失敗</string>
+    <string name="tost_dialog_profile_serverError">サーバーでエラーが起こった可能性があります</string>
+    <string name="dialog_profile_followedbyuser">このユーザーにフォローされている</string>
+    <string name="dialog_profile_notfollowerdbyser">このユーザーにフォローされていない</string>
+    <string name="dialog_profile_followinguser">このユーザーをフォローしている</string>
+    <string name="dialog_profile_notfollowinguser">このユーザーをフォローしていない</string>
+    <string name="dialog_translate_SelectTranslationLanguage">翻訳言語の選択</string>
+    <string name="dialog_translate_translationresault">翻訳結果</string>
+    <string name="dialog_update_newTweet">新規ツイート</string>
+    <string name="dialog_update_directmessageto">宛先</string>
+    <string name="dialog_userselect_Getfolowerslist">フォローワーリスト</string>
+    <string name="dialog_userselect_GetFriendslist">フレンドリスト</string>
+    <string name="dialog_userselect_Nomorefriends">これ以上いません</string>
+    <string name="actvity_twittersetting_Addaccount">アカウント追加</string>
+    <string name="actvity_twittersetting_add">追加</string>
+    <string name="activity_ccountsetting_deleteaccount">このアカウントを削除しますか?</string>
+    <string name="activity_crowdroidbusinesssetting_PleaseInputServerAddress">サーバーのアドレスを入力してください</string>
+    <string name="dialog_mainsetting_Autorefresh">>自動更新</string>
+    <string name="activity_mainsetting_pleasesetaccount">アカウントの設定 :</string>
+    <string name="toast_actvity_mainsetting_selectwalpaper">壁紙に使用する画像を選択してください。</string>
+    <string name="activity_mainsetting_minute">分</string>
+    <string name="activity_mainsetting_minutes">分</string>
+    <string name="activity_mainsetting_autorefreshtimeis">"自動更新間隔: "</string>
+    <string name="activity_mainsetting_start">実行中</string>
+    <string name="activity_mainsetting_stop">停止中</string>
+    <string name="activity_mainsetting_hashtag">フィルター機能</string>
+    <string name="translate_engine_selected">翻訳エンジンを選択してください</string>
+    <string name="activity_mainsetting_delete_hashtag">このキーワードを削除しますか？</string>
+     <string name="activity_hashtagsetting_delete"><u>クリックで削除</u></string>
+    <string name="activity_mainsetting_add_hashtag">キーワードの追加</string>
+    <string name="activity_mainsetting_add_hashtag_u">ユーザ追加</string>
+    <string name="dialog_hashtag_setting_tips">指定したキーワードを含むつぶやきをタイムライン上で伏せ字(#文字列)にします</string>
+    <string name="dialog_hashtag_setting_tips_u">指定したユーザーのつぶやきをタイムライン上で伏せ字(#文字列)にします</string>
+    <string name="activity_mainsetting_hash_tag_example1">例: オリンピック、#olympic</string>
+    <string name="activity_mainsetting_hash_tag_example2">ユーザー名の前の@は不要です</string>
+    <string name="activity_translatesetting_disabletranslate">自動翻訳を有効にする</string>
+    <string name="activity_translatesetting_enabletranslate">自動翻訳を無効にする</string>
+    <string name="activity_translatesetting_deletethis">削除しますか?</string>
+    <string name="activity_translatesetting_addnewtranlate">翻訳設定の追加</string>
+    <string name="dialog_crowdroidupdate_versionupdate">バージョンアップグレード</string>
+    <string name="dialog_crowdroidupdate_updatecrowdroid">Crowdroidをアップグレードしますか?</string>
+    <string name="dialog_crowdroidupdate_yes">はい</string>
+    <string name="dialog_crowdroidupdate_no">いいえ</string>
+    <string name="dialog_myuncatchexceptionhandler_bugreport">バグ報告</string>
+    <string name="dialog_myuncatchexceptionhandler_sendbugrport">開発元へバグ報告しますか？</string>
+    <string name="layout_dialog_add_follow5_loginname">ログイン名称</string>
+    <string name="layout_dialog_add_follow5__passwd">パスワード</string>
+    <string name="layout_dialog_add_translate_uid">uid</string>
+    <string name="layout_dialog_add_translate_to">to</string>
+    <string name="layout_dialog_add_translate_from">from</string>
+    <string name="dialog_layout_translate_Camera">\ \ \ \ \ \ \ \ \ Camera\ \ \ \ \ \ \ \ \ \ </string>
+    <string name="picture">\ \ \ \ \ \ \ \ \ picture\ \ \ \ \ \ \ \ \ \ </string>
+    <string name="up">上のディレクトリ</string>
+    
+    <!-- basic text for dialog -->
+    <string name="close">閉じる</string>
+    <string name="count">カウント</string>
+    <string name="prev">前のページへ</string>
+    <string name="next">次のページへ</string>
+    
+    
+    <string name="activity_login_selectservice">サービスの選択</string>
+    <string name="activity_login_selectloginname">ログイン名称の選択</string>
+    <string name="activity_login_addaccount">新しいアカウントの追加</string>
+    <string name="activity_register_twitter_clickandputpincode">「Allow」ボタンをクリックし、PINコードを入力してください.</string>
+    <string name="activity_register_twitter_putpincodehere">PINコード入力</string>
+    <string name="activity_register_twitter_allowuse">このアプリケーションがあなたのTwitterアカウントを利用するのを許可する</string>
+    <string name="activity_register_twitter_back">戻る</string>
+    <string name="activity_register_twitter_finish">完了</string>
+    
+    <string name="activity_defaultsetting_defaultsetting">初期設定に戻したい項目を選択してください</string>
+    <string name="activity_defaultsetting_autorefresh">自動更新</string>
+    <string name="activity_defaultsetting_autorefresh_switch_tab">タブ切り替え時にタイムラインの更新を行う</string>
+    <string name="activity_defaultsetting_multiupdate">複数一括ツイート</string>
+    <string name="activity_defaultsetting_translate">翻訳</string>
+    <string name="activity_defaultsetting_setwallpaper">壁紙</string>
+    <string name="activity_defaultsetting_notification">通知機能</string>
+    <string name="activity_defaultsetting_fontcolor">フォント色</string>
+    <string name="activity_mainsetting_notificationatmessage">\@メッセージ</string>
+    <string name="activity_mainsetting_generalmessage">ホーム タイムライン</string>
+    <string name="activity_mainsetting_makeautotranslate">自動翻訳を有効にしますか？</string>
+    <string name="activity_translatesetting_userid">ユーザーID</string>
+    <string name="activity_translatesetting_translatefrom">FROM</string>
+    <string name="activity_translatesetting_translateto">TO</string>
+    <string name="activity_setting_twitter_witteroriginalserver">Twitter original server</string>
+    <string name="activity_setting_twitter_APIproxy">StatusNet Api URI</string>
+    <string name="activity_setting_keywordtab_adduser">ユーザー指定 </string>
+    <string name="activity_setting_keywordtab_addkeyword">キーワード指定</string>
+    <string name="activity_mainsetting_multitweet">複数一括ツイート</string>
+    <string name="activity_mainsetting_accountmanage">アカウント設定</string>
+    <string name="activity_mainsetting_defaultsetting">初期設定</string>
+    <string name="activity_lgoin_loginsucceed">ログイン成功</string>
+    <string name="activity_lgoin_about">情報</string>
+	<!-- language -->
+    <string name="arabic">Arabic</string>
+    <string name="chinese_simple">Chinese_simple</string>
+    <string name="chinese_traditional">Chinese_traditional</string>
+    <string name="dutch">Dutch</string>
+    <string name="english">English</string>
+    <string name="french">French</string>
+    <string name="german">German</string>
+    <string name="greek">Greek</string>
+    <string name="italian">Italian</string>
+    <string name="japanese">Japanese</string>
+    <string name="korea">Korea</string>
+    <string name="portugese">Portugese</string>
+    <string name="russian">Russian</string>
+    <string name="spanish">Spanish</string>
+    
+        <!-- dialog muilt select  for email-->
+    <string name="dialog_multiselect_sending">メーラーを選択してください</string>
+    
+     <!-- menu name in IGeneral and TimeLineActivty menu-->
+    <string name="Refresh">更新</string>
+	<string name="License">ライセンス</string>
+	<string name="Help">ヘルプ</string>
+	<string name="FindUser">ユーザー検索</string>
+	<string name="About">情報</string>
+	<string name="Search">検索</string>
+	<string name="Favorite">お気に入り</string>
+	<string name="pleaseselectpicture">画像を選択してください</string>
+	<string name="retweet_comfirm_message">%sのメッセージをリツイートしますか？</string>
+	<string name="qt">QT(Twitterの公式RT)</string>
+	<string name="inline_tweet">インラインツイート</string>
+	<string name="dialog_profile_user_not_found">このユーザーは見つかりませんでした</string>
+	    
+    <!-- file size -->
+	<string name="dialog_update_imagesize">添付できる画像サイズは500キロバイト以下です</string>
+    
+	<!-- activity name -->
+	<string name="activity_setting">設定</string>
+	<string name="activity_setting_multi_tweet">複数一括ツイート</string>
+	<string name="activity_setting_translation">翻訳</string>
+	<string name="activity_setting_account_manage">アカウント設定</string>
+	<string name="activity_setting_twitter">Twitterの設定</string>
+	<string name="activity_setting_follow5">Follow5の設定</string>
+	<string name="activity_setting_crowdroid_business">Crowdroid for Businessの設定</string>
+	<string name="activity_setting_default">初期設定</string>
+    
+	<!-- Error Messages -->
+	<string name="error_message_auto_translation">自動翻訳失敗</string>
+	<string name="error_message_twitter_account_register_suceeded">登録完了</string>
+	<string name="error_message_twitter_account_register_failed">アカウント情報が認証できません</string>
+	<string name="error_message_crowdroid_account_register_suceeded">登録完了</string>
+	<string name="error_message_crowdroid_account_register_failed">アカウント情報が認証できません</string>
+	<string name="error_message_communication_handler_suceeded">ok</string>
+	<string name="error_message_communication_handler_authorization_failed">認証失敗</string>
+	<string name="error_message_communication_handler_server_error">サーバー側でエラーが起こった可能性があります</string>
+	<string name="error_message_communication_handler_communication_error">通信エラー</string>
+	<string name="error_message_communication_handler_client_error">クライアント側でエラーが起こった可能性があります</string>
+	
+    <!-- After 1.5.1 -->
+    <string name="activity_cfb_account_notice1">現在IPアドレスが異なる複数のサーバにアカウントを登録することはできません。</string>
+    <string name="activity_register_overwrited">アカウント情報が上書きされました。</string>
+    <string name="activity_register_failed">アカウント認証に失敗しました。</string>
+	<string name="error_message_rejected_for_ngword">NGワードが含まれています。</string>
+</resources>

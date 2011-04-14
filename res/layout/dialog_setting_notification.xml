@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/ScrollView01" android:layout_width="wrap_content" android:layout_height="wrap_content"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+	android:layout_height="wrap_content" android:orientation="vertical"
+	android:layout_width="fill_parent">
+	
+	
+	<CheckBox android:layout_height="wrap_content" android:id="@+id/notification"
+		android:checked="true" android:clickable="true" android:layout_width="fill_parent"
+		android:text="@string/activity_defaultsetting_notification"></CheckBox>
+	<CheckBox android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="@string/activity_timeline_tab_directmessage"
+		android:layout_marginLeft="30dip" android:id="@+id/direct_message_check_box"></CheckBox>
+	<CheckBox android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="@string/activity_timeline_tab_at_message"
+		android:layout_marginLeft="30dip" android:id="@+id/at_message_check_box"></CheckBox>
+	<CheckBox android:layout_width="wrap_content" android:text="@string/activity_mainsetting_generalmessage"
+		android:layout_height="wrap_content" 
+		android:layout_marginLeft="30dip" android:id="@+id/general_message_check_box"></CheckBox>
+	<TextView android:layout_height="wrap_content" android:id="@+id/notification_status"
+		android:text="" android:layout_width="fill_parent"></TextView>
+</LinearLayout>
+</ScrollView>

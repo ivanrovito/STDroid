@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent"
+	android:background="@android:color/darker_gray" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<TextView android:text="@string/activity_defaultsetting_defaultsetting"
+		android:id="@+id/show_title" android:layout_width="fill_parent"
+		android:textColor="@android:color/white" android:layout_height="wrap_content"
+		android:gravity="center"></TextView>
+	<LinearLayout android:id="@+id/bottom_button_layout"
+		android:layout_width="fill_parent" android:layout_height="50px"
+		android:orientation="vertical" android:layout_alignParentBottom="true"
+		android:background="@android:drawable/bottom_bar">
+		<Button android:text="@android:string/ok" android:id="@+id/defualt_confirm_button"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"></Button>
+	</LinearLayout>
+	<ListView android:id="@+id/default_setting_listview"
+		android:layout_below="@id/show_title" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_above="@id/bottom_button_layout"
+		android:cacheColorHint="#00000000"></ListView>
+
+</RelativeLayout>
+	
+	

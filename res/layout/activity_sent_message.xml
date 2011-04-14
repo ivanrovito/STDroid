@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF">
+    
+    <TextView
+    	android:id="@+id/notifyusers"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_margin="20dip"
+    	android:visibility="gone"/>
+    	
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        
+        <ImageView
+            android:id="@+id/imageanimation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iconsend"
+            android:layout_alignParentRight="true"
+            android:visibility="invisible"/>
+            
+    </RelativeLayout>
+    
+     
+    <EditText
+    	android:id="@+id/edit"
+    	android:layout_width="fill_parent"
+    	android:layout_height="150dip"
+    	android:gravity="top"/>
+    	
+    	
+    		<LinearLayout android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:orientation="horizontal"
+			android:layout_marginLeft="20dip" android:layout_marginRight="20dip">
+				
+				
+			<ImageButton android:id="@+id/translationButton"
+			    android:layout_width="40dip"  android:layout_height="40dip"
+			    android:scaleType="fitXY"  android:src="@drawable/multiselectdialog_translate"/>
+			    
+			    
+			<ImageButton android:id="@+id/shortenUrlButton"
+				android:layout_width="40dip" android:layout_height="40dip"
+				android:scaleType="fitXY" android:src="@drawable/updatedialog_shorten_url_image" />
+
+			<ImageButton android:id="@+id/longTweetButton"
+			    android:layout_width="40dip" android:layout_height="40dip"
+			    android:scaleType="fitXY" android:src="@drawable/updatedialog_long_tweet"/>
+	
+		    <TextView android:id="@+id/counterText" android:text="count"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textColor="@color/white_gray" android:textStyle="bold"
+				android:textSize="20px" android:layout_marginLeft="50px" />
+
+		</LinearLayout>
+    	
+    <LinearLayout
+    	android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:weightSum="2">
+    	
+    	<Button
+    	    android:id="@+id/Button_send_ok"
+    	    android:layout_width="75dip"
+    	    android:layout_height="wrap_content"
+    	    android:layout_weight="1"
+    	    android:text="@string/ok"/>
+    	    
+    	<Button
+    	    android:id="@+id/Button_send_cancel"
+    	    android:layout_width="75dip"
+    	    android:layout_height="wrap_content"
+    	    android:layout_weight="1"
+    	    android:text="@string/cancel"/>
+    	    
+    </LinearLayout>
+    
+</LinearLayout>

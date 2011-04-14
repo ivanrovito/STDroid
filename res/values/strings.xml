@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">StatusDroid</string>
+	<!-- <string name="iiinputserver">Input Server Address</string> -->
+	<string name="activity_login_softwareName">Software Name: StatusDroid \nVersionName:</string>
+	<string name="activity_login_MiniSDK">\nSupportSDK:</string>
+	<string name="activity_login_developer">\nDeveloper: StatusDroid\nContact: kimura@smg.co.jp
+	</string>
+	<string name="activity_lgoin_layout_crowdroid_business_about">
+		<u>What is StatusDroid?</u>
+	</string>
+	<string name="menu_timeline_settings">Settings</string>
+	<string name="dialog_searchservice_pleasechoose">Please Choose :</string>
+	<string name="toast_verify_failed">Failed to verify user</string>
+	<string name="activity_timeline_tab_home">Public TimeLine</string>
+	<string name="activity_timeline_tab_at_message">\@ Message</string>
+	<string name="activity_timeline_tab_directmessage">Direct Message</string>
+	<string name="activity_timeline_tab_MyTimeline">My TimeLine</string>
+	<string name="activity_timeline_currentpage">\ \ \ \ \ \ \ \ Current Page: </string>
+	<string name="dialog_activity_timeline_receive">Receive</string>
+	<string name="dialog_activity_timeline_send">Send</string>
+	<string name="dialog_activity_message_sent_failed">Failed</string>
+	<string name="dialog_activity_message_sent_notifyusers">You have not logged in TimeRunDroid yet. Please log
+		in firstly.</string>
+	<string name="dialog_activity_message_sent_shortenurl">Shorten URL</string>
+	<string name="menu_activity_timeline_wallpaper">select what you like best as the wallpaper</string>
+	<string name="dialog_long_tweet_twitlonger">Edit Long Message</string>
+	<string name="dialog_searchuser_searchuser">search user</string>
+	<string name="dialog_searchinfo_searchsometing">keyword search</string>
+	<string name="dialog_multiselect_succeed">succeeded</string>
+	<string name="dialog_file_explorer_selectpicture">Select a picture</string>
+	<string name="dialog_file_explorer_nosdcard">No SD Card Mounted</string>
+	<string name="dialog_file_explorer_retweet">Retweet the</string>		<!-- i think it isn't used  -->
+	<string name="message">\'s message</string>
+	<string name="activity_setting_confirm">Confirm</string>              <!-- also this isn't used  -->
+	<string name="activity_setting_cancel">cancel</string>				<!-- also this can instead -->
+	<string name="dialog_multiselect_deletethemessage">Delete this message</string>
+	<string name="ok">OK</string>	<!-- used by a lot of thins so i don't want to change this -->
+	<string name="cancel">Cancel</string>
+	<string name="dialog_multiselect_faidled">Failed</string> <!-- used by lot of ... -->
+	<string name="dialog_searchinfo_searchkeyworld">keyword search</string>
+	<string name="dialog_profile_myfavoritestatus">My Favorite Status</string>
+	<string name="dialog_profile_status">\'s status</string>
+	<string name="dialog_profile_follower">Follower[ %1$s ]\nFollowing[ %2$s ]</string>
+	<string name="tost_dialog_profile_communicationfailed">Communication failed</string>
+	<string name="tost_dialog_profile_serverError">Server error may occurred</string>
+	<string name="dialog_profile_followedbyuser">Followed by this user</string>
+	<string name="dialog_profile_notfollowerdbyser">Not followed by this user</string>
+	<string name="dialog_profile_followinguser">Following this user</string>
+	<string name="dialog_profile_notfollowinguser">Not following this user</string>
+	<string name="dialog_translate_SelectTranslationLanguage">Select Translation Language</string>
+	<string name="dialog_translate_translationresault">Translate Result</string>
+	<string name="dialog_update_newTweet">New Tweet</string>
+	<string name="dialog_update_directmessageto">Direct Message to</string>
+
+	<string name="dialog_userselect_Getfolowerslist">Get followers list</string>
+	<string name="dialog_userselect_GetFriendslist">Get Friends list</string>
+	<string name="dialog_userselect_Nomorefriends">No more friends</string>
+	<string name="dialog_url_shorten_convert">Convert</string>
+	<string name="actvity_twittersetting_Addaccount">Add account</string>
+	<string name="actvity_twittersetting_add">ADD</string>
+	<string name="activity_ccountsetting_deleteaccount">Delete this account?</string>
+	<string name="activity_crowdroidbusinesssetting_PleaseInputServerAddress">Please Input Server Address</string>
+	<string name="dialog_mainsetting_Autorefresh">Auto refresh</string>	<!-- this string is not used-->
+	<string name="activity_mainsetting_pleasesetaccount">please setting account :</string>
+	<string name="toast_actvity_mainsetting_selectwalpaper">select what you like best as the wallpaper</string>
+	<string name="activity_mainsetting_minute">Minute</string>
+	<string name="activity_mainsetting_minutes">Minutes</string>
+	<string name="activity_mainsetting_autorefreshtimeis">"auto refresh time is: "</string>
+	<string name="activity_mainsetting_start">starting</string>
+	<string name="activity_mainsetting_stop">stopping</string>
+	<string name="activity_mainsetting_hashtag">Filter Function</string>
+	<string name="translate_engine_selected">select translate engine</string>
+	<string name="activity_mainsetting_delete_hashtag">delete this keyword?</string>
+	<string name="activity_hashtagsetting_delete">
+		<u>click for delete </u>
+	</string>
+	<string name="activity_mainsetting_add_hashtag">Add keyword</string>
+	<string name="activity_mainsetting_add_hashtag_u">Add User</string>
+	<string name="dialog_hashtag_setting_tips">Hide the message which contains specified keyword
+		in TL</string>
+	<string name="dialog_hashtag_setting_tips_u">Hide the message of specified user in TL</string>
+	<string name="activity_mainsetting_hash_tag_example1">ex. olympic, #olympic</string>
+	<string name="activity_mainsetting_hash_tag_example2">No need to put @ before user name</string>
+	<string name="activity_translatesetting_disabletranslate">Enable Auto Translation</string>
+	<string name="activity_translatesetting_enabletranslate">Disable Auto Translation</string>
+	<string name="activity_translatesetting_deletethis">Delete this?</string>
+	<string name="activity_translatesetting_addnewtranlate">Add new translate</string>
+	<string name="dialog_crowdroidupdate_versionupdate">Version update</string>
+	<string name="dialog_crowdroidupdate_updatecrowdroid">Do you want to update the crowdroid</string>
+	<string name="dialog_crowdroidupdate_yes">yes</string> <!-- this string seem to be not used -->
+	<string name="dialog_crowdroidupdate_no">no</string>	<!-- this string seem to be not used -->
+	<string name="dialog_myuncatchexceptionhandler_bugreport">Bug Report</string>
+	<string name="dialog_myuncatchexceptionhandler_sendbugrport">Do you want to send Bug Report to Developer?
+	</string>
+	<string name="layout_dialog_add_follow5_loginname">Login name</string>
+	<string name="layout_dialog_add_follow5__passwd">Password</string>
+	<string name="layout_dialog_add_translate_uid">uid</string>
+	<string name="layout_dialog_add_translate_to">to</string>
+	<string name="layout_dialog_add_translate_from">from</string>
+	<!-- it seemed not used -->
+	<string name="dialog_layout_translate_Camera">\ \ \ \ \ \ \ \ \ Camera\ \ \ \ \ \ \ \ \ \
+	</string>
+	<string name="picture">\ \ \ \ \ \ \ \ \ picture\ \ \ \ \ \ \ \ \ \
+	</string>
+	<string name="up">Up</string>
+
+
+	<string name="close">Close</string> <!-- dialog close menu -->
+	<string name="count">count</string>  <!-- count for calculate the  words-->
+	<string name="prev">Prev Page</string><!-- page preview -->
+	<string name="next">Next Page</string><!-- page next -->
+
+
+	<string name="activity_login_selectservice">Select Service</string>
+	<string name="activity_login_selectloginname">Select Login Name</string>
+	<string name="activity_login_addaccount">Add New Account</string>
+	<string name="activity_register_twitter_clickandputpincode">Click Allow Button, and put the pin code.</string>
+	<string name="activity_register_twitter_putpincodehere">Put the pin code here.</string>
+	<string name="activity_register_twitter_allowuse">Allow this Application to use your twitter Account.
+	</string>
+	<string name="activity_register_twitter_back">Back</string>
+	<string name="activity_register_twitter_finish">Finish</string>
+	<!-- for default setting -->
+	<string name="activity_defaultsetting_defaultsetting">Please choose the setting which you want to restore
+		default!</string>
+	<string name="activity_defaultsetting_autorefresh">Auto refresh</string>
+	<string name="activity_defaultsetting_autorefresh_switch_tab">Refresh TimeLine when you change tab</string>
+	<string name="activity_defaultsetting_multiupdate">Multi update</string>	<!-- organised -->
+	<string name="activity_defaultsetting_translate">Translate</string>
+	<string name="activity_defaultsetting_setwallpaper">Set WallPaper</string>
+	<string name="activity_defaultsetting_notification">Notification</string>
+	<string name="activity_defaultsetting_fontcolor">Font Color</string>
+	<string name="activity_mainsetting_notificationatmessage">\@\ \ Message</string>
+	<string name="activity_mainsetting_generalmessage">General message</string>
+	<string name="activity_mainsetting_makeautotranslate">Make auto translate?</string>
+	<string name="activity_translatesetting_userid">USER ID</string>
+	<string name="activity_translatesetting_translatefrom">FROM</string>
+	<string name="activity_translatesetting_translateto">TO</string>
+	<string name="activity_setting_twitter_witteroriginalserver">Twitter original server</string>
+	<string name="activity_setting_twitter_APIproxy">TimeRun Base URI</string>
+	<string name="activity_setting_keywordtab_adduser">Add User</string>
+	<string name="activity_setting_keywordtab_addkeyword">Add Keyword</string>
+	<string name="activity_mainsetting_multitweet">Multi tweet</string>
+	<string name="activity_mainsetting_accountmanage">Account manage</string>
+	<string name="activity_mainsetting_defaultsetting">Default Setting</string>
+	<string name="activity_lgoin_loginsucceed">Login Succeeded</string>
+	<string name="activity_lgoin_about">ABOUT</string>
+
+	<!-- language selection -->
+	<string name="arabic">Arabic</string>
+	<string name="chinese_simple">Chinese_simple</string>
+	<string name="chinese_traditional">Chinese_traditional</string>
+	<string name="dutch">Dutch</string>
+	<string name="english">English</string>
+	<string name="french">French</string>
+	<string name="german">German</string>
+	<string name="greek">Greek</string>
+	<string name="italian">Italian</string>
+	<string name="japanese">Japanese</string>
+	<string name="korea">Korea</string>
+	<string name="portugese">Portugese</string>
+	<string name="russian">Russian</string>
+	<string name="spanish">Spanish</string>
+
+	<!-- dialog muilt select -->
+	<string name="dialog_multiselect_sending">Select Mailer</string>
+	<!-- menu name in IGeneral-->
+	<string name="Refresh">Refresh</string>
+	<string name="License">License</string>
+	<string name="Help">Help</string>
+	<string name="FindUser">FindUser</string>
+	<string name="About">About</string>
+	<string name="Search">Search</string>
+	<string name="Favorite">Favorite</string>
+	<string name="Logout">Logout</string>
+	<string name="pleaseselectpicture">please select the picture!</string>
+	<string name="retweet_comfirm_message">Retweet %s\'s message?</string>
+	<string name="qt">QT(Twitter\'s official RT)</string>
+	<string name="inline_tweet">Inline tweet</string>
+	<string name="dialog_profile_user_not_found">This user was not found!</string>
+
+	<!-- file size -->
+	<string name="dialog_update_imagesize">Image size must be less than 500kb</string>
+
+	<!-- activity name -->
+	<string name="activity_setting">Settings</string>
+	<string name="activity_setting_multi_tweet">Multi tweet</string>
+	<string name="activity_setting_translation">Translation</string>
+	<string name="activity_setting_account_manage">Account manage</string>
+	<string name="activity_setting_twitter">Twitter setting</string>
+	<string name="activity_setting_follow5">Follow5 setting</string>
+	<string name="activity_setting_crowdroid_business">Crowdroid for Business setting</string>
+	<string name="activity_setting_default">Default setting</string>
+
+	<!-- Error Messages -->
+	<string name="error_message_auto_translation">Auto Translation Error</string>
+	<string name="error_message_twitter_account_register_suceeded">Registration completed</string>
+	<string name="error_message_twitter_account_register_failed">Could not verify your account info</string>
+	<string name="error_message_crowdroid_account_register_suceeded">Registration completed</string>
+	<string name="error_message_crowdroid_account_register_failed">Could not verify your account info</string>
+	<string name="error_message_communication_handler_suceeded">ok</string>
+	<string name="error_message_communication_handler_authorization_failed">Authorization failed</string>
+	<string name="error_message_communication_handler_server_error">Server side error has occurred</string>
+	<string name="error_message_communication_handler_communication_error">Communication error</string>
+	<string name="error_message_communication_handler_client_error">Client side error has occurred</string>
+
+	<!-- After 1.5.1 -->
+	<string name="activity_cfb_account_notice1">Cannot register account to different server.
+	</string>
+	<string name="activity_register_overwrited">Account Info has been overwritten.</string>
+	<string name="activity_register_failed">Failed to authorize account.</string>
+	<string name="error_message_rejected_for_ngword">Your message contains NG Word</string>
+</resources>

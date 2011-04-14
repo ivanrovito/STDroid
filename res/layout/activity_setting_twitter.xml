@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/twitter_scroll" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:orientation="vertical"
+	android:background="@android:color/darker_gray">
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:orientation="vertical"
+		android:background="@android:color/darker_gray">
+		<LinearLayout android:id="@+id/LinearLayout01"
+			android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<RadioGroup android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical"
+				android:checkedButton="@+id/lunch" android:id="@+id/menu">
+
+
+				<RadioButton android:text="@string/activity_setting_twitter_witteroriginalserver"
+					android:checked="true" android:id="@+id/oath" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:layout_marginLeft="20dip"></RadioButton>
+				<RadioButton android:text="@string/activity_setting_twitter_APIproxy"
+					android:id="@+id/basic" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:layout_marginLeft="20dip"></RadioButton>
+			</RadioGroup>
+		</LinearLayout>
+
+		<EditText android:layout_width="fill_parent" android:id="@+id/basic_url"
+			android:layout_height="wrap_content" android:layout_marginLeft="20dip"
+			android:layout_marginRight="20dip">
+		</EditText>
+		<LinearLayout android:id="@+id/LinearLayout02"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:background="@android:drawable/bottom_bar" android:gravity="center">
+			<Button android:layout_height="wrap_content"
+				android:text="@string/actvity_twittersetting_add" android:id="@+id/add_twitter"
+				android:layout_width="100dip"></Button>
+		</LinearLayout>
+		<ListView android:id="@+id/show_twitter_account"
+			android:layout_width="fill_parent" android:layout_height="225dip"
+			android:layout_marginLeft="20dip" android:layout_marginRight="20dip">
+		</ListView>
+
+
+		<LinearLayout android:id="@+id/LinearLayout03"
+			android:layout_width="fill_parent" android:background="@android:drawable/bottom_bar"
+			android:gravity="center" android:layout_height="wrap_content">
+			<Button android:layout_height="wrap_content" android:text="@android:string/ok"
+				android:id="@+id/add_twitter_ok" android:layout_width="100dip"></Button>
+		</LinearLayout>
+
+
+	</LinearLayout>
+</ScrollView>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "-//Puppy Crawl//DTD Check Configuration 1.3//EN" "http://www.puppycrawl.com/dtds/configuration_1_3.dtd">
+
+<!--
+    This configuration file was written by the eclipse-cs plugin configuration editor
+-->
+<!--
+    Checkstyle-Configuration: SMG CheckStyle
+    Description: none
+-->
+<module name="Checker">
+  <property name="severity" value="warning"/>
+  <module name="TreeWalker">
+    <module name="MemberName">
+      <property name="format" value="^[a-z][a-zA-Z0-9]*_$"/>
+    </module>
+    <module name="StaticVariableName">
+      <property name="format" value="^[a-z][a-zA-Z0-9]*__$"/>
+    </module>
+    <module name="LocalFinalVariableName"/>
+    <module name="AvoidStaticImport"/>
+    <module name="ImportOrder">
+      <property name="severity" value="ignore"/>
+      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+    </module>
+    <module name="UnusedImports"/>
+    <module name="LineLength">
+      <property name="max" value="120"/>
+      <property name="tabWidth" value="4"/>
+    </module>
+    <module name="MethodLength"/>
+    <module name="MethodLength">
+      <property name="max" value="120"/>
+    </module>
+    <module name="AnonInnerLength"/>
+    <module name="ModifierOrder"/>
+    <module name="DoubleCheckedLocking"/>
+    <module name="UnnecessaryParentheses"/>
+    <module name="HideUtilityClassConstructor"/>
+  </module>
+  <module name="FileLength"/>
+  <module name="StrictDuplicateCode">
+    <property name="min" value="20"/>
+  </module>
+</module>

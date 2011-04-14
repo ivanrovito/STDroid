@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.anhuioss.crowdroid" android:versionCode="1"
+	android:versionName="1.0">
+	<application android:icon="@drawable/icon" android:label="@string/app_name"
+		android:name=".MyApplication" android:largeScreens="false">
+		<activity android:name=".LoginActivity" android:label="@string/app_name"
+			android:configChanges="keyboard|keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+		<activity android:configChanges="keyboard|keyboardHidden|orientation"
+			android:name=".TimeLineActivity" />
+		<activity android:name=".twitter.RegisterTwitterAccountActivity"
+			android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+		<activity android:configChanges="keyboard|keyboardHidden|orientation"
+			android:name=".settings.MainSettingActivity" android:label="@string/activity_setting"></activity>
+		<activity android:configChanges="keyboard|keyboardHidden|orientation"
+			android:name=".settings.MultiUpdateSettingActivity" android:label="@string/activity_setting_multi_tweet"></activity>
+		<activity android:configChanges="keyboard|keyboardHidden|orientation"
+			android:name=".settings.TranslateSettingActivity" android:label="@string/activity_setting_translation"></activity>
+		<activity android:configChanges="keyboard|keyboardHidden|orientation"
+			android:name=".settings.AccountSettingActivity" android:label="@string/activity_setting_account_manage"></activity>
+		<activity android:configChanges="keyboard|keyboardHidden|orientation"
+			android:name=".ShowWebContentsActivity" android:label="showweb"></activity>
+		<activity android:configChanges="keyboard|keyboardHidden|orientation"
+			android:name=".settings.TwitterSettingActivity" android:label="@string/activity_setting_twitter" />
+		<activity android:configChanges="keyboard|keyboardHidden|orientation"
+			android:name=".settings.KeywordSettingActivity" android:label="@string/activity_mainsetting_hashtag">
+		</activity>
+		<activity android:configChanges="keyboard|keyboardHidden|orientation"
+			android:name=".settings.UserKeySettingActivity" android:label="@string/activity_mainsetting_hashtag">
+		</activity>
+		<activity android:configChanges="keyboard|keyboardHidden|orientation"
+			android:name=".settings.KeywordTabActivity" android:label="@string/activity_mainsetting_hashtag">
+		</activity>
+		<service android:name=".notification.NotificationCheckService"></service>
+		<activity android:configChanges="keyboard|keyboardHidden|orientation"
+			android:name=".settings.DefaultSettingActivity" android:label="@string/activity_setting_default">
+		</activity>
+		<activity android:theme="@android:style/Theme.Dialog"
+			android:name=".openfunctions.MessageSentActivity"
+			android:configChanges="keyboard|keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="com.anhuioss.crowdroid.openfunctions.messagesent" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<service android:enabled="true"
+			android:name=".notification.NotificationCheckService" />
+	</application>
+	<uses-sdk android:minSdkVersion="4" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+</manifest> 

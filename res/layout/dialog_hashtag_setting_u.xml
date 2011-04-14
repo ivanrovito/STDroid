@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	android:orientation="vertical" android:gravity="center">
+
+	<TextView android:text="@string/activity_mainsetting_hash_tag_example2" android:id="@+id/example_text"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+	<EditText android:text="" android:id="@+id/tag_edit"
+		android:layout_height="wrap_content" android:layout_width="200dip"></EditText>
+
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content" android:layout_width="fill_parent"
+	android:orientation="horizontal">
+
+	<ImageView android:id="@+id/user_image"
+		android:layout_width="60dip" 
+		android:layout_height="60dip"
+		android:src="@drawable/icon" 
+		android:paddingTop="10dip"
+		android:paddingLeft="10dip" />
+
+	<LinearLayout android:id="@+id/LinearLayout01"
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:orientation="vertical" android:paddingLeft="10dip"
+		android:paddingRight="10dip">
+		
+		
+		<TextView android:id="@+id/screen_name" 
+			android:text="screen_name" 
+			android:layout_height="wrap_content" 
+			android:layout_width="fill_parent" 
+			android:textSize="18sp" 
+			android:paddingTop="2dip" />
+		
+		<TextView android:id="@+id/status"  
+			android:text="status" 
+			android:layout_height="wrap_content" 
+			android:layout_width="fill_parent" 
+			android:paddingLeft="20dip" 
+			android:paddingTop="3dip" />
+
+		<TextView android:id="@+id/update_time" 
+			android:text="update_time" 
+			android:layout_height="wrap_content" 
+			android:layout_width="fill_parent"
+			android:paddingTop="3dip" /> 
+			
+	</LinearLayout>
+</LinearLayout>
