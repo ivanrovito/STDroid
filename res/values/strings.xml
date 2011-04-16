@@ -4,7 +4,7 @@
 	<!-- <string name="iiinputserver">Input Server Address</string> -->
 	<string name="activity_login_softwareName">Software Name: StatusDroid \nVersionName:</string>
 	<string name="activity_login_MiniSDK">\nSupportSDK:</string>
-	<string name="activity_login_developer">\nDeveloper: StatusDroid\nContact: kimura@smg.co.jp
+	<string name="activity_login_developer">\nDeveloper: StatusDroid\nContact: kimutansk82@gmail.com
 	</string>
 	<string name="activity_lgoin_layout_crowdroid_business_about">
 		<u>What is StatusDroid?</u>
@@ -20,7 +20,7 @@
 	<string name="dialog_activity_timeline_receive">Receive</string>
 	<string name="dialog_activity_timeline_send">Send</string>
 	<string name="dialog_activity_message_sent_failed">Failed</string>
-	<string name="dialog_activity_message_sent_notifyusers">You have not logged in TimeRunDroid yet. Please log
+	<string name="dialog_activity_message_sent_notifyusers">You have not logged in StatusDroid yet. Please log
 		in firstly.</string>
 	<string name="dialog_activity_message_sent_shortenurl">Shorten URL</string>
 	<string name="menu_activity_timeline_wallpaper">select what you like best as the wallpaper</string>
@@ -138,7 +138,7 @@
 	<string name="activity_translatesetting_translatefrom">FROM</string>
 	<string name="activity_translatesetting_translateto">TO</string>
 	<string name="activity_setting_twitter_witteroriginalserver">Twitter original server</string>
-	<string name="activity_setting_twitter_APIproxy">TimeRun Base URI</string>
+	<string name="activity_setting_twitter_APIproxy">StatusNet Base URI</string>
 	<string name="activity_setting_keywordtab_adduser">Add User</string>
 	<string name="activity_setting_keywordtab_addkeyword">Add Keyword</string>
 	<string name="activity_mainsetting_multitweet">Multi tweet</string>

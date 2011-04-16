@@ -4,7 +4,7 @@
     <!-- <string name="inputserver">サーバーのアドレスを入力してください。</string> -->
     <string name="activity_login_softwareName">ソフト名: StatusDroid \nバージョン:</string>
     <string name="activity_login_MiniSDK">\nサポートSDK:</string>
-    <string name="activity_login_developer">\n開発元: StatusDroid\n連絡先: kimura@smg.co.jp</string>
+    <string name="activity_login_developer">\n開発元: StatusDroid\n連絡先: kimutansk82@gmail.com</string>
     <string name="activity_lgoin_layout_crowdroid_business_about"><u>StatusDroidとは?</u></string>
     <string name="menu_timeline_settings">設定</string>
     <string name="dialog_searchservice_pleasechoose">選択してください :</string>

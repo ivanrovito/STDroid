@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-	package="com.anhuioss.crowdroid" android:versionCode="1"
+	package="jp.gr.kmtn.stdroid" android:versionCode="1"
 	android:versionName="1.0">
 	<application android:icon="@drawable/icon" android:label="@string/app_name"
 		android:name=".MyApplication" android:largeScreens="false">
@@ -37,12 +37,12 @@
 		<activity android:configChanges="keyboard|keyboardHidden|orientation"
 			android:name=".settings.KeywordTabActivity" android:label="@string/activity_mainsetting_hashtag">
 		</activity>
-		<service android:name=".notification.NotificationCheckService"></service>
+		<service android:name="jp.gr.kmtn.stdroid.notification.NotificationCheckService"></service>
 		<activity android:configChanges="keyboard|keyboardHidden|orientation"
 			android:name=".settings.DefaultSettingActivity" android:label="@string/activity_setting_default">
 		</activity>
 		<activity android:theme="@android:style/Theme.Dialog"
-			android:name=".openfunctions.MessageSentActivity"
+			android:name="jp.gr.kmtn.stdroid.openfunctions.MessageSentActivity"
 			android:configChanges="keyboard|keyboardHidden|orientation">
 			<intent-filter>
 				<action android:name="com.anhuioss.crowdroid.openfunctions.messagesent" />
@@ -50,7 +50,7 @@
 			</intent-filter>
 		</activity>
 		<service android:enabled="true"
-			android:name=".notification.NotificationCheckService" />
+			android:name="notification.NotificationCheckService" />
 	</application>
 	<uses-sdk android:minSdkVersion="4" />
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
