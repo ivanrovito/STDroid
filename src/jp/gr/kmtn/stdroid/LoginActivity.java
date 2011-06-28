@@ -11,6 +11,7 @@ import jp.gr.kmtn.stdroid.util.CommunicationHandlerResult;
 import jp.gr.kmtn.stdroid.util.CrowdroidUpdate;
 import jp.gr.kmtn.stdroid.util.MyDbAdapter;
 import jp.gr.kmtn.stdroid.util.MyUncaughtExceptionHandler;
+import jp.gr.kmtn.stdroid.util.UrlConvertUtil;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -491,13 +492,13 @@ public class LoginActivity extends Activity
                 {
                     result = TwitterHandler.verifyUser(account.getScreenName(),
                             account.getPassWord(),
-                            TwitterHandler.AUTH_TYPE_BASIC, apiServer);
+                            TwitterHandler.AUTH_TYPE_BASIC, UrlConvertUtil.createBaseApiUrlFromBase(apiServer));
                     if (result.getResultCode() == 200)
                     {
                         //Set Account Info to Handler
                         TwitterHandler.setAccount(account.getScreenName(),
                                 account.getPassWord(),
-                                TwitterHandler.AUTH_TYPE_BASIC, apiServer);
+                                TwitterHandler.AUTH_TYPE_BASIC, UrlConvertUtil.createBaseApiUrlFromBase(apiServer));
                         resultFlag = true;
                     }
                     else

@@ -10,7 +10,6 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import jp.gr.kmtn.stdroid.R;
 import jp.gr.kmtn.stdroid.dialog.FavoriteDialog;
 import jp.gr.kmtn.stdroid.dialog.MultiSelectDialog;
 import jp.gr.kmtn.stdroid.dialog.SearchInfoDialog;
@@ -31,11 +30,9 @@ import jp.gr.kmtn.stdroid.util.CommunicationHandlerResult;
 import jp.gr.kmtn.stdroid.util.IErrorMessage;
 import jp.gr.kmtn.stdroid.util.ImageBuilder;
 import jp.gr.kmtn.stdroid.util.MyDbAdapter;
-
 import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.app.TabActivity;
-import android.app.LauncherActivity.ListItem;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
@@ -60,7 +57,6 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView.OnItemLongClickListener;
 import android.widget.TabHost.OnTabChangeListener;
 import android.widget.TabHost.TabSpec;
-
 
 public class TimeLineActivity extends TabActivity implements
         OnTabChangeListener, OnItemClickListener, OnItemLongClickListener
@@ -301,7 +297,7 @@ public class TimeLineActivity extends TabActivity implements
 
         Integer.valueOf(this.myDbAdapter.getStatusValue(MyDbAdapter.PARAM_STATUS_UTC_OFFSET));
 
-        addScrollListener();
+//        addScrollListener();
     }
 
     //----------------------------------------------------------------------

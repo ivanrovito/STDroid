@@ -6,6 +6,7 @@ import jp.gr.kmtn.stdroid.info.UserInfo;
 import jp.gr.kmtn.stdroid.twitter.RegisterTwitterAccountActivity;
 import jp.gr.kmtn.stdroid.twitter.TwitterHandler;
 import jp.gr.kmtn.stdroid.util.MyDbAdapter;
+import jp.gr.kmtn.stdroid.util.UrlConvertUtil;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -24,7 +25,6 @@ import android.widget.RadioButton;
 import android.widget.SimpleCursorAdapter;
 import android.widget.Toast;
 import android.widget.AdapterView.OnItemLongClickListener;
-
 
 public class TwitterSettingActivity extends Activity
 {
@@ -265,9 +265,10 @@ public class TwitterSettingActivity extends Activity
     private void registerToken(String username, String password)
     {
         TwitterHandler.setAccount(username, password,
-                TwitterHandler.AUTH_TYPE_BASIC, proxy_url);
+                TwitterHandler.AUTH_TYPE_BASIC, UrlConvertUtil.createBaseApiUrlFromBase(proxy_url));
         UserInfo userInfo = (UserInfo) TwitterHandler.verifyUser(username,
-                password, TwitterHandler.AUTH_TYPE_BASIC, proxy_url).getData();
+                password, TwitterHandler.AUTH_TYPE_BASIC, UrlConvertUtil.createBaseApiUrlFromBase(proxy_url)).getData();
+
         if (userInfo != null)
         {
 

@@ -8,6 +8,7 @@ import jp.gr.kmtn.stdroid.twitter.TwitterHandler;
 import jp.gr.kmtn.stdroid.util.AccountInfo;
 import jp.gr.kmtn.stdroid.util.CommunicationHandlerResult;
 import jp.gr.kmtn.stdroid.util.MyDbAdapter;
+import jp.gr.kmtn.stdroid.util.UrlConvertUtil;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -371,7 +372,7 @@ public class MessageSentActivity extends Activity
                     String password = MessageSentActivity.this.accountInfo.getPassWord();
                     String screenName = MessageSentActivity.this.accountInfo.getScreenName();
                     TwitterHandler.setAccount(screenName, password,
-                            TwitterHandler.AUTH_TYPE_BASIC, apiServer);
+                            TwitterHandler.AUTH_TYPE_BASIC, UrlConvertUtil.createBaseApiUrlFromBase(apiServer));
                 }
                 else
                 {//(Original)

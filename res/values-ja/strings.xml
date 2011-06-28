@@ -124,7 +124,7 @@
     <string name="activity_translatesetting_translatefrom">FROM</string>
     <string name="activity_translatesetting_translateto">TO</string>
     <string name="activity_setting_twitter_witteroriginalserver">Twitter original server</string>
-    <string name="activity_setting_twitter_APIproxy">StatusNet Api URI</string>
+    <string name="activity_setting_twitter_APIproxy">StatusNet Base URI</string>
     <string name="activity_setting_keywordtab_adduser">ユーザー指定 </string>
     <string name="activity_setting_keywordtab_addkeyword">キーワード指定</string>
     <string name="activity_mainsetting_multitweet">複数一括ツイート</string>

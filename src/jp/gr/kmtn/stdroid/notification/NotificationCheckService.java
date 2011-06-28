@@ -6,6 +6,7 @@ import jp.gr.kmtn.stdroid.twitter.TwitterHandler;
 import jp.gr.kmtn.stdroid.util.AccountInfo;
 import jp.gr.kmtn.stdroid.util.CommunicationHandlerResult;
 import jp.gr.kmtn.stdroid.util.MyDbAdapter;
+import jp.gr.kmtn.stdroid.util.UrlConvertUtil;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -323,7 +324,7 @@ public class NotificationCheckService extends Service
         {
             TwitterHandler.setAccount(accountInfo.getAccessToken(),
                     accountInfo.getTokenSecret(),
-                    TwitterHandler.AUTH_TYPE_BASIC, apiProxyServer);
+                    TwitterHandler.AUTH_TYPE_BASIC, UrlConvertUtil.createBaseApiUrlFromBase(apiProxyServer));
         }
         else
         {//Use Original

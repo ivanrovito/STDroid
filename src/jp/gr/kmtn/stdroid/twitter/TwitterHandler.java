@@ -24,7 +24,6 @@ import jp.gr.kmtn.stdroid.info.TimeLineInfo;
 import jp.gr.kmtn.stdroid.info.UserInfo;
 import jp.gr.kmtn.stdroid.util.CommunicationHandlerResult;
 import jp.gr.kmtn.stdroid.util.MultiPartFormOutputStream;
-
 import oauth.signpost.OAuth;
 import oauth.signpost.OAuthProvider;
 import oauth.signpost.basic.DefaultOAuthConsumer;
@@ -52,7 +51,6 @@ import org.xmlpull.v1.XmlPullParserException;
 
 import android.net.Uri;
 import android.util.Log;
-
 
 public class TwitterHandler
 {
@@ -241,7 +239,7 @@ public class TwitterHandler
     public static CommunicationHandlerResult getPublicTimeLine(int page)
     {
         CommunicationHandlerResult result = httpGet(apiServer__
-                + "/statuses/public_timeline.xml?count=20&page=" + page,
+                + "/statuses/public_timeline.xml?count=40&page=" + page,
                 accountName__, accountSecret__, authType__);
 
         if (result.getResultCode() == HttpURLConnection.HTTP_OK)
@@ -261,7 +259,7 @@ public class TwitterHandler
     public static CommunicationHandlerResult getMyTimeLine(int page)
     {
         CommunicationHandlerResult result = httpGet(apiServer__
-                + "/statuses/user_timeline.xml?count=20&page=" + page,
+                + "/statuses/user_timeline.xml?count=40&page=" + page,
                 accountName__, accountSecret__, authType__);
 
         if (result.getResultCode() == HttpURLConnection.HTTP_OK)
@@ -362,7 +360,7 @@ public class TwitterHandler
     public static CommunicationHandlerResult getDirectMessageReceive(int page)
     {
         CommunicationHandlerResult result = httpGet(apiServer__
-                + "/direct_messages.xml?count=20&page=" + page, accountName__,
+                + "/direct_messages.xml?count=40&page=" + page, accountName__,
                 accountSecret__, authType__);
 
         if (result.getResultCode() == HttpURLConnection.HTTP_OK)
@@ -382,7 +380,7 @@ public class TwitterHandler
     {
 
         CommunicationHandlerResult result = httpGet(apiServer__
-                + "/direct_messages/sent.xml?count=20&page=" + page,
+                + "/direct_messages/sent.xml?count=40&page=" + page,
                 accountName__, accountSecret__, authType__);
 
         if (result.getResultCode() == HttpURLConnection.HTTP_OK)

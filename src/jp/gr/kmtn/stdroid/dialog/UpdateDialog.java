@@ -9,6 +9,7 @@ import jp.gr.kmtn.stdroid.twitter.TwitterHandler;
 import jp.gr.kmtn.stdroid.util.AccountInfo;
 import jp.gr.kmtn.stdroid.util.CommunicationHandlerResult;
 import jp.gr.kmtn.stdroid.util.MyDbAdapter;
+import jp.gr.kmtn.stdroid.util.UrlConvertUtil;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -183,8 +184,8 @@ public class UpdateDialog extends Dialog
         // Init Views
         // ----------------------
 
-        // Upload Image Text
-        this.uploadMessageText = (TextView) findViewById(R.id.upload_message);
+//        // Upload Image Text
+//        this.uploadMessageText = (TextView) findViewById(R.id.upload_message);
 
         // Upload Image Path Text
         this.uploadImagePathText = (TextView) findViewById(R.id.file_path);
@@ -209,38 +210,41 @@ public class UpdateDialog extends Dialog
             }
         });
 
-        // Upload Image Button
-        this.uploadImageButton = (ImageButton) findViewById(R.id.uploadImageButton);
-        this.uploadImageButton.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v)
-            {
-                // Open Dialog
-                FileExplorer dialog = new FileExplorer(getContext());
-                String[] serverMessage = new String[6];
-
-                String type = UpdateDialog.this.db.getSettingValue(MyDbAdapter.PARAM_SETTING_TWITTER_API_PROXY);
-                if (type.equals(MyDbAdapter.PARAM_VALUE_OFF))
-                {
-                    serverMessage[0] = TwitterHandler.AUTH_TYPE_OAUTH;
-                    serverMessage[1] = TwitterHandler.CONSUMER_KEY;
-                    serverMessage[2] = TwitterHandler.CONSUMER_SECRET;
-                    serverMessage[3] = UpdateDialog.this.currentLoginAccountInfo.getAccessToken();
-                    serverMessage[4] = UpdateDialog.this.currentLoginAccountInfo.getTokenSecret();
-                    serverMessage[5] = TWITPIC_API_KEY;
-                }
-                else
-                {
-                    serverMessage[0] = TwitterHandler.AUTH_TYPE_BASIC;
-                    serverMessage[5] = IMAGEUR_API_KEY;
-                }
-                dialog.setTarget(UpdateDialog.this.uploadImagePathText,
-                        UpdateDialog.this.updateText, serverMessage);
-                dialog.show();
-
-            }
-        });
+        // TODO 画像のアップロードは現状無関係なサーバにアップされてしまうため一時的にオミットする
+        //      今後mustardをベースにStatusNetが稼働しているサーバにアップできるよう修正すること。
+        //
+        //        // Upload Image Button
+        //        this.uploadImageButton = (ImageButton) findViewById(R.id.uploadImageButton);
+        //        this.uploadImageButton.setOnClickListener(new View.OnClickListener() {
+        //
+        //            @Override
+        //            public void onClick(View v)
+        //            {
+        //                // Open Dialog
+        //                FileExplorer dialog = new FileExplorer(getContext());
+        //                String[] serverMessage = new String[6];
+        //
+        //                String type = UpdateDialog.this.db.getSettingValue(MyDbAdapter.PARAM_SETTING_TWITTER_API_PROXY);
+        //                if (type.equals(MyDbAdapter.PARAM_VALUE_OFF))
+        //                {
+        //                    serverMessage[0] = TwitterHandler.AUTH_TYPE_OAUTH;
+        //                    serverMessage[1] = TwitterHandler.CONSUMER_KEY;
+        //                    serverMessage[2] = TwitterHandler.CONSUMER_SECRET;
+        //                    serverMessage[3] = UpdateDialog.this.currentLoginAccountInfo.getAccessToken();
+        //                    serverMessage[4] = UpdateDialog.this.currentLoginAccountInfo.getTokenSecret();
+        //                    serverMessage[5] = TWITPIC_API_KEY;
+        //                }
+        //                else
+        //                {
+        //                    serverMessage[0] = TwitterHandler.AUTH_TYPE_BASIC;
+        //                    serverMessage[5] = IMAGEUR_API_KEY;
+        //                }
+        //                dialog.setTarget(UpdateDialog.this.uploadImagePathText,
+        //                        UpdateDialog.this.updateText, serverMessage);
+        //                dialog.show();
+        //
+        //            }
+        //        });
 
         // Shorten URL Button
         this.shortenUrlButton = (ImageButton) findViewById(R.id.shortenUrlButton);
@@ -359,13 +363,13 @@ public class UpdateDialog extends Dialog
         }
         else if (mode == MODE_DIRECT_MESSAGE)
         {
-            this.uploadImageButton.setVisibility(View.GONE);
+//            this.uploadImageButton.setVisibility(View.GONE);
         }
 
         if (this.multiUpdateInfo.size() > 0)
         {
-            this.uploadImagePathText.setVisibility(View.GONE);
-            this.uploadImageButton.setVisibility(View.GONE);
+//            this.uploadImagePathText.setVisibility(View.GONE);
+//            this.uploadImageButton.setVisibility(View.GONE);
             this.uploadMessageText.setVisibility(View.GONE);
         }
 
@@ -401,18 +405,18 @@ public class UpdateDialog extends Dialog
 
             if (account != null)
             {
-                String API_PROXY_ADDRESS = this.db.getSettingValue(MyDbAdapter.PARAM_SETTING_TWITTER_API_PROXY_SERVER);
+                String baseUrl = this.db.getSettingValue(MyDbAdapter.PARAM_SETTING_TWITTER_API_PROXY_SERVER);
                 if (this.db.getSettingValue(
                         MyDbAdapter.PARAM_SETTING_TWITTER_API_PROXY).equals(
                         MyDbAdapter.PARAM_VALUE_ON))
                 {
-                    if (API_PROXY_ADDRESS != null
-                            && API_PROXY_ADDRESS.length() > 0)
+                    if (baseUrl != null
+                            && baseUrl.length() > 0)
                     {
                         TwitterHandler.setAccount(account.getName(),
                                 account.getPassWord(),
                                 TwitterHandler.AUTH_TYPE_BASIC,
-                                API_PROXY_ADDRESS);
+                                UrlConvertUtil.createBaseApiUrlFromBase(baseUrl));
                         this.multiUpdateInfo.add(new String[]
                         { account.getScreenName(), account.getPassWord(),
                                 IGeneral.SERVICE_NAME_TWITTER });
@@ -424,7 +428,7 @@ public class UpdateDialog extends Dialog
                             account.getAccessToken(),
                             account.getTokenSecret(),
                             TwitterHandler.AUTH_TYPE_OAUTH,
-                            this.db.getSettingValue(MyDbAdapter.PARAM_SETTING_TWITTER_API_PROXY_SERVER));
+                            UrlConvertUtil.createBaseApiUrlFromBase(this.db.getSettingValue(MyDbAdapter.PARAM_SETTING_TWITTER_API_PROXY_SERVER)));
                     this.multiUpdateInfo.add(new String[]
                     { account.getAccessToken(), account.getTokenSecret(),
                             IGeneral.SERVICE_NAME_TWITTER });
